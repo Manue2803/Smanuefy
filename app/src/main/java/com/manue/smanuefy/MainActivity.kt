@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
         lista.setOnItemClickListener() { adapterView, view, position, id ->
             var pos = position
 
-            if(musica != null) {
+            if (musica != null) {
                 musica.release()
                 musica = MediaPlayer()
             }
@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
             initializeSeekBar()
 
             button4.setOnClickListener(View.OnClickListener {
-                if(musica != null) {
+                if (musica != null) {
                     musica.release()
                     musica = MediaPlayer()
                 }
@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
             })
 
             button2.setOnClickListener(View.OnClickListener {
-                if(musica != null) {
+                if (musica != null) {
                     musica.release()
                     musica = MediaPlayer()
                 }
